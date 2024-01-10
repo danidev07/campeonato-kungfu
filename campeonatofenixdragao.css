@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: linear-gradient(180deg, rgb(179, 14, 22), rgb(63, 62, 62));
+  margin-top: 20px;
+}
+
+#logo-copa3{
+  width: 300px;
+  height: 200;
+  position: absolute;
+  top: 20px;
+  left: 55px;
+  max-width: 200px;
+  
+  
+}
+#kungfupersonagem{
+  width: 300px;
+  height: 200px;
+  position: absolute;
+  top: 250px;
+  left: 55px;
+  max-width: 200px;
+  margin-top: 10px;
+  
+}
+#dragon-logo{
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 455px;
+  left: 10px;
+  max-width: 200px;
+}
+#fenix-logo{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 470px;
+  left: 150px;
+  max-width: 150px;
+}
+
+#brucelee-image{
+  width: 200px;
+  position: absolute;
+  top: 100px;
+  right: 70px;
+  max-width: 700px;
+}
+#bruceword{
+  width: 250px;
+  position: absolute;
+  right: 45px;
+  top: 345px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+}
+#brucename{
+  color: white;
+  width: 250px;
+  position: absolute;
+  right: 45px;
+  top: 540px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: justify;
+
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, rgb(63, 62, 62), rgb(179, 14, 22) );
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+}
+form .user-details .input-box{
+  margin-bottom: 5px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 35px;
+  width: 300px;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: rgb(179, 14, 22);
+}
+
+#detalhes-categoria{
+  margin: 20px 0 20px 0;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background:rgb(179, 14, 22);
+   border-color: #d9d9d9;
+ }
+ 
+
+ form .category-details{
+  margin-top: 10px;
+ }
+ form .category-details .category-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category-section{
+  display: flex;
+  width: 80%;
+  margin: 14px 0 ;
+  justify-content: space-between;
+ }
+ form .category-section label{
+  width: 200px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+ form .category-section label .nivel{
+ height: 18px;
+ width: 18px;
+ border-radius: 50%;
+ margin-right: 10px;
+ background: #C9C9C9;
+ border: 5px solid transparent;
+ transition: all 0.3s ease;
+} 
+  #dragao:checked ~ .category-section label .dragao,
+  #fenix:checked ~ .category-section label .fenix{
+   background: rgb(179, 14, 22);
+   border-color: #c9c9c9;
+ }
+ #dragon{
+  width: 45px;
+  height: 50px;
+  max-width: 50px;
+  object-fit: cover;
+ }
+ #fenix{
+  width: 80px;
+  height: 80px;
+  max-width: 100x;
+  object-fit: cover;
+ }
+
+
+ form .forms-details .forms-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .forms-section{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 14px 0 ;
+  justify-content: space-between;
+ }
+ form .forms-section label{
+  width: 120px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+ form .forms-section label .nivel{
+ height: 18px;
+ width: 18px;
+ border-radius: 50%;
+ margin-right: 10px;
+ background: #C9C9C9;
+ border: 5px solid transparent;
+ transition: all 0.3s ease;
+} 
+
+
+ #livre:checked ~ .forms-section label .livre, 
+ #tradicional:checked ~ .forms-section label .tradicional{
+   background: rgb(179, 14, 22);
+   border-color: #d9d9d9;
+ }
+ form.forms-2-section{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 14px 0 ;
+  justify-content: space-between;
+}
+form .forms-2-section label{
+  height: 50px;
+  margin-left: 15px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+form .forms-2-section label .nivel{
+ height: 18px;
+ width: 18px;
+ border-radius: 50%;
+ margin-right: 10px;
+ background: #d9d9d9;
+ border: 5px solid transparent;
+ transition: all 0.3s ease;
+}
+
+.forms-details .tecnica-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+#maos-norte:checked ~ .forms-2-section label .maos-norte,
+#maos-sul:checked ~ .forms-2-section label .maos-sul,
+#facao:checked ~ .forms-2-section label .facao,
+#espada:checked ~ .forms-2-section label .espada,
+#kuandao:checked ~ .forms-2-section label .kuandao,
+#pudao:checked ~ .forms-2-section label .pudao,
+#tridente:checked ~ .forms-2-section label .tridente,
+#paelua:checked ~ .forms-2-section label .paelua,
+#bastao:checked ~ .forms-2-section label .bastao,
+#lanca:checked ~ .forms-2-section label .lanca{
+  background: rgb(179, 14, 22);
+  border-color: #d9d9d9;
+}
+#aviso{
+  margin-top: 20px;
+  font-size: 13px;
+}
+#information-detail{
+  font-size: 12px;
+}
+
+ form input[type="radio"]{
+  display: none;
+ }
+ form .button{
+   height: 50px;
+   margin-top: 25px;
+   padding: 5px;
+ }
+
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(150deg, rgb(63, 62, 62), rgb(179, 14, 22) );
+ }
+
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-50deg, rgb(63, 62, 62), rgb(179, 14, 22) );
+  }
+ @media(max-width: 589px){
+ .container{
+    width: 100%;
+  }
+
+  form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .user-details .input-box input{
+    width: 280px;
+  }
+  form .category{
+    width: 100%;
+  }
+
+  form .button input{
+    width: 200px;
+    margin-top: 2px;
+  }
+
+  @media(max-width: 520px){
+  .container .content .category{
+    flex-direction: column;
+  }
+
+}
+  @media (max-width: 520px) {
+  .container .content .nivel-section{
+    flex-direction: column;
+  }
+  }
+  @media (max-width: 790px) {
+    .container .content .category-section{
+      margin-bottom: 5px;
+      flex-direction: column;
+    }
+    
+  }
+}
+  @media (max-width: 1280px) {
+    #logo-copa3, #data-copa, #logo-garradeaguia, #logos-chancela, #fotos-copa3 {
+      display: none;
+    }
+
+  }

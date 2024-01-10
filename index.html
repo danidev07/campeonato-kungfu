@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./campeonatofenixdragao.css">
+    <link rel="shortcut icon" href="./assets/images/faviconying-32x32.png" type="image/x-icon">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <img src="./assets/images/logo-copa3.png" alt="logogarradeaguia" id="logo-copa3">
+  <img src="./assets/images/kungfufight.png" alt="imagembanner" id="kungfupersonagem">
+  <img src="./assets/images/dragonlogo.png" id="dragon-logo"alt="">
+  <img src="./assets/images/fenixlogo.png" id="fenix-logo"alt="">
+  <img src="./assets/images/brucelee.jpg" alt="" id="brucelee-image">
+  <h2 id="bruceword">“Você e o seu oponente são um só. Há uma relação de coexistência entre vocês. Você coexiste com seu oponente e torna-se complemento dele, absorvendo-lhe os ataques e usando a força dele para vencê-lo.”
+  </h2>
+  <h3 id="brucename">BRUCE LEE</h3>
+  <div class="container">
+    <div class="title">Inscrição Campeonato de KUNG FU <br> Dragon - Fênix</div>
+    <div class="content">
+      <form id="form" action="https://sheetdb.io/api/v1/6530lm29uryvc" method="POST" name="Inscrição Campeonato KungFu">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome do Atleta</span>
+            <input type="text" name="data[Nome]" placeholder="Digite seu nome" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Idade</span>
+            <input type="number" name="data[Idade]" placeholder="Digite sua Idade" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" name="data[Email]" placeholder="Digite seu email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Data de Nascimento</span>
+            <input type="date" name="data[Data de Nascimento]" placeholder="Digite sua Data de Nascimento" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Telefone(com DDD)</span>
+            <input type="tel" name="data[Telefone]" placeholder="Digite seu Número com seu DDD" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Estado e Cidade</span>
+            <input type="text" name='data[Estado e Cidade]' placeholder="Digite seu Estado" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Bairro</span>
+            <input type="text" name='data[Bairro]' placeholder="Digite seu Bairro" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nome do Professor</span>
+            <input type="text" name='data[Professor]' placeholder="Digite o nome do Professor" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nome da Escola</span>
+            <input type="text" name='data[Escola]' placeholder="Digite o nome da Escola" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Nome do Estilo</span>
+            <input type="text" name='data[Estilo]' placeholder="Digite o nome do Estilo" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Graduação</span>
+            <input type="text" name="data[Graduação]" placeholder="Digite sua Graduação" required>
+          </div>
+          <h6 id="aviso">*O formulário deve ser totalmente preenchido.*</h6>
+          <h6 id="detalhes-categoria">Essa  categoria é necessário que o atleta seja adulto, nível avançado, tradicional, masculino ou feminino. O mesmo (a) participará de três técnicas.
+            <br>
+            <br>Selecione sua Categoria e as três técninas:
+          </h6>
+        </div>
+        
+        <div class="category-details">
+          <input type="radio" name="data[Categoria]" id="dragao" value="Dragão">
+          <input type="radio" name="data[Categoria]" id="fenix" value="Fênix">
+          
+          <span class="category-title">Categoria</span>
+          <div class="category-section">
+            <label for="dragao">
+              <span class="nivel dragao"></span>
+              <span>Dragon <h6>Masculino</h6></span>
+              <img id="dragon"src="./assets/images/dragaochines-main.png" alt="dragaochines">
+            </label>
+            <label for="fenix">
+              <span class="nivel fenix"></span>
+              <span>Fênix <h6>Feminino</h6></span>
+              <img id="fenix"src="./assets/images/fenixmain.png" alt="fenix">
+            </label>  
+          </div>
+        </div>
+        <div class="forms-details">
+          <input type="radio" name="data[1ª Técnica]" id="maos-norte" value="Mãos do Norte">
+          <input type="radio" name="data[1ª Técnica]" id="maos-sul" value="Mãos do Sul">
+          <span class="tecnina-livre tecnica-title">Mão Livre</span>
+          <div class="forms-2-section">
+            <label for="maos-norte">
+              <span class="nivel maos-norte"></span>
+              <span>Mãos do Norte</span>
+            </label>
+            
+            <label for="maos-sul">
+              <span class="nivel maos-sul"></span>
+              <span>Mãos do Sul</span>
+            </label>
+          </div>
+          <input type="radio" name="data[2ª Técnica]" id="facao" value="Facão">
+          <input type="radio" name="data[2ª Técnica]" id="espada" value="Espada">
+          <span class="tecnina-arma-media tecnica-title">Arma Média</span>
+          <div class="forms-2-section">
+            <label for="facao">
+              <span class="nivel facao"></span>
+              <span>Facão</span>
+            </label>
+            
+            <label for="espada">
+              <span class="nivel espada"></span>
+              <span>Espada</span>
+            </label>
+          </div>
+          <input type="radio" name="data[3ª Técnica]" id="kuandao" value="Kuan dao">
+          <input type="radio" name="data[3ª Técnica]" id="pudao" value="Pu dao">
+          <input type="radio" name="data[3ª Técnica]" id="tridente" value="Tridente">
+          <input type="radio" name="data[3ª Técnica]" id="paelua" value="Pá e Lua">
+          <input type="radio" name="data[3ª Técnica]" id="bastao" value="Bastão">
+          <input type="radio" name="data[3ª Técnica]" id="lanca" value="Lança">
+          <span class="tecnina-arma-longa tecnica-title">Armas Longas / Especiais</span>
+          <div class="forms-2-section">
+            <label for="bastao">
+              <span class="nivel bastao"></span>
+              <span>Bastão</span>
+            </label>
+            <label for="lanca">
+              <span class="nivel lanca"></span>
+              <span>Lança</span>
+            </label>
+            <label for="kuandao">
+              <span class="nivel kuandao"></span>
+              <span>Kuan dao</span>
+            </label>
+            
+            <label for="pudao">
+              <span class="nivel pudao"></span>
+              <span>Pu dao</span>
+            </label>
+            <label for="tridente">
+              <span class="nivel tridente"></span>
+              <span>Tridente</span>
+            </label>
+            
+            <label for="paelua">
+              <span class="nivel paelua"></span>
+              <span>Pá e Lua</span>
+            </label>
+            
+          </div>
+          
+        </div>
+        
+        <!-- <div class="user-details">
+          <div class="input-box">
+            <span class="details">Nome da Forma:</span>
+            <input type="text" name="data[Nome da Forma]" placeholder="Digite o nome da Forma" required>
+          </div>
+        </div> -->
+        <div class="button">
+          <input onclick="redirect()"type="submit" value="Registrar">
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./redirect.js"></script>
+</body>
+</html>
